@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="d2.css">
+</head>
+<body>
+    <p>
+        第一個數: <input id="a" type="text" style="height: 10px;">
+    </p>
+    <p>
+        第二個數: <input id="b"  type="text" style="height: 10px;">
+    </p>
+    <button onclick="sum()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="mutiple()">*</button>
+    <button onclick="divide()">/</button>
+    <output id="c"></output>
+</body>
+<script>
+    function sum(){
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        document.getElementById('c').value = a+b
+    }
+    function minus(a,b){
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        document.getElementById('c').value = a-b
+    }
+    function mutiple(a,b){
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        document.getElementById('c').value = a*b
+    }
+    function divide(a,b){
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        document.getElementById('c').value = a/b
+    }
+</script>    
+</html>
